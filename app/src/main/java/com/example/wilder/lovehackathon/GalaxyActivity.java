@@ -44,58 +44,31 @@ public class GalaxyActivity extends AppCompatActivity {
         PopulationAdapteur adapter4 = new PopulationAdapteur(GalaxyActivity.this, mList4);
         PopulationAdapteur adapter5 = new PopulationAdapteur(GalaxyActivity.this, mList5);
 
-
-        mList1.add(new ProfilModel("Bleu Vert", "female", "auburn", "1.73", "https://vignette.wikia.nocookie.net/starwars/images/b/b7/MP-MonMothma.png", "67", "Mon Mothma", "light", "human", "Tatooine"));
-        mList1.add(new ProfilModel("Marron", "female", "brown", "1.57", "https://vignette.wikia.nocookie.net/starwars/images/b/b6/Cord%C3%A9_-_SW_Card_Trader.png", null, "Cordé", "light", "human","Tatooine"));
-        mList1.add(new ProfilModel("Bleu", "female", "gold", "2", null, "76", "Captain Phasma", "pale", "human","Tatooine"));
-        mList1.add(new ProfilModel("Marron", "female", null, null, null, null, "Leia Organa", null, null,"Tatooine"));
+        mList1.add(new ProfilModel("Bleu Vert", "Femme", "auburn", "1m73", "null", "67 kg", "Mon Mothma", "light", "human","Tatooine")));
+        mList1.add(new ProfilModel("Marron", "Femme", "Brun", "1m57", "null", null, "Cordé", "light", "human","Tatooine")));
+        mList1.add(new ProfilModel("Bleu", "Femme", "Or", "2m", null, "76 kg", "Captain Phasma", "pale", "human","Tatooine")));
+        mList1.add(new ProfilModel("Marron", "Femme", null, null, null, null, "Leia Organa", null, null,"Tatooine")));
         listPlanete1.setAdapter(adapter1);
 
 
         mList2.add(new ProfilModel("Bleu", "Femme", "Marron", "1m65", null, "75 kg", "Beru Whitesun lars", "Blanche", "Humain","Coruscant"));
         mList2.add(new ProfilModel("Marron clair", "Femme", "Marron", "1m65", null, "45 kg", "Padmé Amidala", " Blanche", "Humain","Coruscant"));
         mList2.add(new ProfilModel("Bleu Royal", "Femelle", "Noir", "1m76", null, "56 kg", "Luminara Unduli", "Verte", "Mirilian","Coruscant"));
-        mList2.add(new ProfilModel("Jaune", "Femelle", null, null, null, null, "Zam Wesell", null, null,"Coruscant"));
-        mList2.add(new ProfilModel(null, null, null, null, null, null, "Shaak Ti", null, null,"Coruscant"));
+        mList2.add(new ProfilModel("Jaune", "Femelle", "Blonde", "1m68", null, "55 kg", "Zam Wesell", "Verte", "Clawdite","Coruscant"));
+        mList2.add(new ProfilModel("Noir", "Femelle", "Gris et Blanc", "1m87", null, "57 kg", "Shaak Ti", "Rouge", "Trogruta","Coruscant"));
         listPlanete2.setAdapter(adapter2);
 
-        mList3.add(new ProfilModel(null, null, null, null, null, null, "Shmi Skywalker", null, null,"Dantooine"));
-        mList3.add(new ProfilModel(null, null, null, null, null, null, "Rey", null, null,"Dantooine"));
+        mList3.add(new ProfilModel(null, null, null, null, null, null, "Thomas", null, null,"Wild"));
+        mList3.add(new ProfilModel(null, null, null, null, null, null, "Hedie", null, null,"Wild"));
         listPlanete3.setAdapter(adapter3);
 
-        mList4.add(new ProfilModel(null, null, null, null, null, null, "Barriss Offee", null, null,"Alderaan"));
-        mList4.add(new ProfilModel(null, null, null, null, null, null, "Taun We", null, null,"Alderaan"));
-        mList4.add(new ProfilModel(null, null, null, null, null, null, "Sly Moore", null, null,"Alderaan"));
+        mList4.add(new ProfilModel("Marron", "Femme", "Marron", "1m63", null, "50 kg", "Shmi Skywalker", "Blanche", "Humain","Dantooine"));
+        mList4.add(new ProfilModel("Noir", "Femme", "Marron", "1m70", null, "54kg", "Rey", "Blanche", "Humain","Dantooine"));
         listPlanete4.setAdapter(adapter4);
 
-        mList5.add(new ProfilModel(null, null, null, null, null, null, "Thomas", null, null,"Wild"));
-        mList5.add(new ProfilModel(null, null, null, null, null, null, "Hedie", null, null,"Wild"));
-
-        mList1.add(new ProfilModel("Bleu Vert", "Femme", "auburn", "1m73", "null", "67 kg", "Mon Mothma", "light", "human"));
-        mList1.add(new ProfilModel("Marron", "Femme", "Brun", "1m57", "null", null, "Cordé", "light", "human"));
-        mList1.add(new ProfilModel("Bleu", "Femme", "Or", "2m", null, "76 kg", "Captain Phasma", "pale", "human"));
-        mList1.add(new ProfilModel("Marron", "Femme", null, null, null, null, "Leia Organa", null, null));
-        listPlanete1.setAdapter(adapter1);
-
-
-        mList2.add(new ProfilModel("Bleu", "Femme", "Marron", "1m65", null, "75 kg", "Beru Whitesun lars", "Blanche", "Humain"));
-        mList2.add(new ProfilModel("Marron clair", "Femme", "Marron", "1m65", null, "45 kg", "Padmé Amidala", " Blanche", "Humain"));
-        mList2.add(new ProfilModel("Bleu Royal", "Femelle", "Noir", "1m76", null, "56 kg", "Luminara Unduli", "Verte", "Mirilian"));
-        mList2.add(new ProfilModel("Jaune", "Femelle", "Blonde", "1m68", null, "55 kg", "Zam Wesell", "Verte", "Clawdite"));
-        mList2.add(new ProfilModel("Noir", "Femelle", "Gris et Blanc", "1m87", null, "57 kg", "Shaak Ti", "Rouge", "Trogruta"));
-        listPlanete2.setAdapter(adapter2);
-
-        mList3.add(new ProfilModel(null, null, null, null, null, null, "Thomas", null, null));
-        mList3.add(new ProfilModel(null, null, null, null, null, null, "Hedie", null, null));
-        listPlanete3.setAdapter(adapter3);
-
-        mList4.add(new ProfilModel("Marron", "Femme", "Marron", "1m63", null, "50 kg", "Shmi Skywalker", "Blanche", "Humain"));
-        mList4.add(new ProfilModel("Noir", "Femme", "Marron", "1m70", null, "54kg", "Rey", "Blanche", "Humain"));
-        listPlanete4.setAdapter(adapter4);
-
-        mList5.add(new ProfilModel("Bleu", "Femelle", "Noir", "1m66", null, "50 kg", "Barriss Offee", "Jaune", "Mirialan"));
-        mList5.add(new ProfilModel("Noir", "Femelle", "Chauve", "2m13", null, "46 kg", "Taun We", "Blanche", "Kaminoan"));
-        mList5.add(new ProfilModel("Blanc", "Femelle", "En train de pousser", "1m78", null, "48", "Sly Moore", "Pale", "Umbaran"));
+        mList5.add(new ProfilModel("Bleu", "Femelle", "Noir", "1m66", null, "50 kg", "Barriss Offee", "Jaune", "Mirialan","Alderaan"));
+        mList5.add(new ProfilModel("Noir", "Femelle", "Chauve", "2m13", null, "46 kg", "Taun We", "Blanche", "Kaminoan","Alderaan"));
+        mList5.add(new ProfilModel("Blanc", "Femelle", "En train de pousser", "1m78", null, "48", "Sly Moore", "Pale", "Umbaran","Alderaan"));
 
         listPlanete5.setAdapter(adapter5);
 

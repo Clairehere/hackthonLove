@@ -29,10 +29,10 @@ public class PopulationAdapteur extends ArrayAdapter<ProfilModel> {
         TextView tvName = (TextView) convertView.findViewById(R.id.tv_name_item);
         tvName.setText(population.getName());
 
-        /*
+
         ImageView imgProfil = convertView.findViewById(R.id.iv_profil_item);
-        Glide.with(parent.getContext()).load(population.getImage().toString()).into(imgProfil);
-*/
+        Glide.with(parent.getContext()).load(population.getImage()).into(imgProfil);
+
 
         return convertView;
     }

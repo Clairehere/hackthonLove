@@ -54,18 +54,20 @@ public class GalaxyActivity extends AppCompatActivity {
         mList2.add(new ProfilModel("Noir", "Femelle", "Gris et Blanc", "1m87", null, "57 kg", "Shaak Ti", "Rouge", "Trogruta"));
         listPlanete2.setAdapter(adapter2);
 
-        mList3.add(new ProfilModel("Marron", "Femme", "Marron", "1m63", null, "50 kg", "Shmi Skywalker", "Blanche", "Humain"));
-        mList3.add(new ProfilModel("Noir", "Femme", "Marron", "1m70", null, "54kg", "Rey", "Blanche", "Humain"));
+        mList3.add(new ProfilModel(null, null, null, null, null, null, "Thomas", null, null));
+        mList3.add(new ProfilModel(null, null, null, null, null, null, "Hedie", null, null));
         listPlanete3.setAdapter(adapter3);
 
-        mList4.add(new ProfilModel("Bleu", "Femelle", "Noir", "1m66", null, "50 kg", "Barriss Offee", "Jaune", "Mirialan"));
-        mList4.add(new ProfilModel("Noir", "Femelle", "Chauve", "2m13", null, "46 kg", "Taun We", "Blanche", "Kaminoan"));
-        mList4.add(new ProfilModel("Blanc", "Femelle", "En train de pousser", "1m78", null, "48", "Sly Moore", "Pale", "Umbaran"));
+        mList4.add(new ProfilModel("Marron", "Femme", "Marron", "1m63", null, "50 kg", "Shmi Skywalker", "Blanche", "Humain"));
+        mList4.add(new ProfilModel("Noir", "Femme", "Marron", "1m70", null, "54kg", "Rey", "Blanche", "Humain"));
         listPlanete4.setAdapter(adapter4);
 
-        mList5.add(new ProfilModel(null, null, null, null, null, null, "Thomas", null, null));
-        mList5.add(new ProfilModel(null, null, null, null, null, null, "Hedie", null, null));
+        mList5.add(new ProfilModel("Bleu", "Femelle", "Noir", "1m66", null, "50 kg", "Barriss Offee", "Jaune", "Mirialan"));
+        mList5.add(new ProfilModel("Noir", "Femelle", "Chauve", "2m13", null, "46 kg", "Taun We", "Blanche", "Kaminoan"));
+        mList5.add(new ProfilModel("Blanc", "Femelle", "En train de pousser", "1m78", null, "48", "Sly Moore", "Pale", "Umbaran"));
         listPlanete5.setAdapter(adapter5);
+
+
 
 
         ImageView planete1 = findViewById(R.id.iv_planete1);

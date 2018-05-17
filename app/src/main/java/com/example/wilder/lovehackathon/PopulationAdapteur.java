@@ -30,7 +30,7 @@ public class PopulationAdapteur extends ArrayAdapter<ProfilModel> {
         tvName.setText(population.getName());
 
         ImageView imgProfil = convertView.findViewById(R.id.iv_profil_item);
-        Glide.with(parent.getContext()).load(population.getProfil().toString()).into(imgProfil);
+        Glide.with(parent.getContext()).load(population.getImage().toString()).into(imgProfil);
 
         // Return the completed view to render on screen
         return convertView;

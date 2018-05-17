@@ -40,17 +40,17 @@ public class GalaxyActivity extends AppCompatActivity {
         PopulationAdapteur adapter5 = new PopulationAdapteur(GalaxyActivity.this, mList5);
 
 
-        mList1.add(new ProfilModel(null, null, null, null, null, null, "Mon Mothma", null, null));
-        mList1.add(new ProfilModel(null, null, null, null, null, null, "Cordé", null, null));
-        mList1.add(new ProfilModel(null, null, null, null, null, null, "Captain Phasma", null, null));
-        mList1.add(new ProfilModel(null, null, null, null, null, null, "Leia Organa", null, null));
+        mList1.add(new ProfilModel("Bleu Vert", "female", "auburn", "1.73", "https://vignette.wikia.nocookie.net/starwars/images/b/b7/MP-MonMothma.png", "67", "Mon Mothma", "light", "human"));
+        mList1.add(new ProfilModel("Marron", "female", "brown", "1.57", "https://vignette.wikia.nocookie.net/starwars/images/b/b6/Cord%C3%A9_-_SW_Card_Trader.png", null, "Cordé", "light", "human"));
+        mList1.add(new ProfilModel("Bleu", "female", "gold", "2", null, "76", "Captain Phasma", "pale", "human"));
+        mList1.add(new ProfilModel("Marron", "female", null, null, null, null, "Leia Organa", null, null));
         listPlanete1.setAdapter(adapter1);
 
 
-        mList2.add(new ProfilModel(null, null, null, null, null, null, "Beru Whitesun lars", null, null));
-        mList2.add(new ProfilModel(null, null, null, null, null, null, "Padmé Amidala", null, null));
-        mList2.add(new ProfilModel(null, null, null, null, null, null, "Luminara Unduli", null, null));
-        mList2.add(new ProfilModel(null, null, null, null, null, null, "Zam Wesell", null, null));
+        mList2.add(new ProfilModel("Bleu", "Femme", "Marron", "1m65", null, "75 kg", "Beru Whitesun lars", "Blanche", "Humain"));
+        mList2.add(new ProfilModel("Marron clair", "Femme", "Marron", "1m65", null, "45 kg", "Padmé Amidala", " Blanche", "Humain"));
+        mList2.add(new ProfilModel("Bleu Royal", "Femelle", "Noir", "1m76", null, "56 kg", "Luminara Unduli", "Verte", "Mirilian"));
+        mList2.add(new ProfilModel("Jaune", "Femelle", null, null, null, null, "Zam Wesell", null, null));
         mList2.add(new ProfilModel(null, null, null, null, null, null, "Shaak Ti", null, null));
         listPlanete2.setAdapter(adapter2);
 
@@ -120,7 +120,40 @@ public class GalaxyActivity extends AppCompatActivity {
             }
         });
 
+        pop1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
+
+        pop2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        pop3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        pop4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        pop5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
 
     }

@@ -7,12 +7,27 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+
 public class CreateProfilActivity extends AppCompatActivity {
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_profil);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference profilRef = database.getReference();
+
 
 
         final EditText etName = findViewById(R.id.et_name);
@@ -29,21 +44,28 @@ public class CreateProfilActivity extends AppCompatActivity {
         btnGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String imgProfil = null;
-                String name = etName.getText().toString();
-                String genre = etGenre.getText().toString();
-                String height = etHeight.getText().toString();
-                String weight = etWeight.getText().toString();
-                String hairColor = etHairColor.getText().toString();
-                String eyesColor = etEyesColor.getText().toString();
-                String skinColor = etSkinColor.getText().toString();
-                String species = etSpecies.getText().toString();
+                final String imgProfil = "dd";
+                final String name = etName.getText().toString();
+                final String genre = etGenre.getText().toString();
+                final String height = etHeight.getText().toString();
+                final String weight = etWeight.getText().toString();
+                final String hairColor = etHairColor.getText().toString();
+                final String eyesColor = etEyesColor.getText().toString();
+                final String skinColor = etSkinColor.getText().toString();
+                final String species = etSpecies.getText().toString();
 
                 ProfilModel profilModel = new ProfilModel(imgProfil, name, genre, height, weight, hairColor, eyesColor, skinColor, species);
+              String key = profilRef.push().getKey();
+                profilRef.child(key).setValue(profilModel);
                 Intent intent = new Intent(CreateProfilActivity.this, GalaxyActivity.class);
                 startActivity(intent);
 
             }
+
+                
+
+                }
+
         });
     }
 }

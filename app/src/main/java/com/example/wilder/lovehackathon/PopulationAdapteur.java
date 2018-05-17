@@ -33,7 +33,7 @@ public class PopulationAdapteur extends ArrayAdapter<ProfilModel> {
         ImageView imgProfil = convertView.findViewById(R.id.iv_profil_item);
         Glide.with(parent.getContext()).load(population.getImage().toString()).into(imgProfil);
 */
-        // Return the completed view to render on screen
+
         return convertView;
     }
 }

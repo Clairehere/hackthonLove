@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".CreateProfilActivity" />
         <activity android:name=".GalaxyActivity" />
-        <activity android:name=".ProfilMeetingActivity"></activity>
+        <activity android:name=".ProfilMeetingActivity" />
+        <activity android:name=".PlaneteActivity"></activity>
     </application>
 
 </manifest>

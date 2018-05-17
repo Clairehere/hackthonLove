@@ -18,8 +18,6 @@ import java.util.ArrayList;
 public class CreateProfilActivity extends AppCompatActivity {
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +25,6 @@ public class CreateProfilActivity extends AppCompatActivity {
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference profilRef = database.getReference();
-
 
 
         final EditText etName = findViewById(R.id.et_name);
@@ -55,15 +52,12 @@ public class CreateProfilActivity extends AppCompatActivity {
                 final String species = etSpecies.getText().toString();
 
                 ProfilModel profilModel = new ProfilModel(imgProfil, name, genre, height, weight, hairColor, eyesColor, skinColor, species);
-              String key = profilRef.push().getKey();
+                String key = profilRef.push().getKey();
                 profilRef.child(key).setValue(profilModel);
                 Intent intent = new Intent(CreateProfilActivity.this, GalaxyActivity.class);
                 startActivity(intent);
 
             }
-
-                
-
 
 
         });

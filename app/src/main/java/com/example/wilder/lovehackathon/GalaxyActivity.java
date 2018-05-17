@@ -44,10 +44,10 @@ public class GalaxyActivity extends AppCompatActivity {
         PopulationAdapteur adapter4 = new PopulationAdapteur(GalaxyActivity.this, mList4);
         PopulationAdapteur adapter5 = new PopulationAdapteur(GalaxyActivity.this, mList5);
 
-        mList1.add(new ProfilModel("Bleu Vert", "Femme", "auburn", "1m73", "null", "67 kg", "Mon Mothma", "light", "human","Tatooine")));
-        mList1.add(new ProfilModel("Marron", "Femme", "Brun", "1m57", "null", null, "Cordé", "light", "human","Tatooine")));
-        mList1.add(new ProfilModel("Bleu", "Femme", "Or", "2m", null, "76 kg", "Captain Phasma", "pale", "human","Tatooine")));
-        mList1.add(new ProfilModel("Marron", "Femme", null, null, null, null, "Leia Organa", null, null,"Tatooine")));
+        mList1.add(new ProfilModel("Bleu Vert", "Femme", "auburn", "1m73", "null", "67 kg", "Mon Mothma", "light", "human","Tatooine"));
+        mList1.add(new ProfilModel("Marron", "Femme", "Brun", "1m57", "null", null, "Cordé", "light", "human","Tatooine"));
+        mList1.add(new ProfilModel("Bleu", "Femme", "Or", "2m", null, "76 kg", "Captain Phasma", "pale", "human","Tatooine"));
+        mList1.add(new ProfilModel("Marron", "Femme", null, null, null, null, "Leia Organa", null, null,"Tatooine"));
         listPlanete1.setAdapter(adapter1);
 
 

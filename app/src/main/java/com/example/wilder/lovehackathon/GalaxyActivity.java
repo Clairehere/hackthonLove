@@ -1,6 +1,8 @@
 package com.example.wilder.lovehackathon;
 
+import android.animation.ObjectAnimator;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +23,7 @@ public class GalaxyActivity extends AppCompatActivity {
     ArrayList<ProfilModel> mList3 = new ArrayList<>();
     ArrayList<ProfilModel> mList4 = new ArrayList<>();
     ArrayList<ProfilModel> mList5 = new ArrayList<>();
+    private static int SPLASH_TIME_OUT = 900;
 
 
     @Override
@@ -77,6 +80,7 @@ public class GalaxyActivity extends AppCompatActivity {
         ImageView planete3 = findViewById(R.id.iv_planete3);
         ImageView planete4 = findViewById(R.id.iv_planete4);
         ImageView planete5 = findViewById(R.id.iv_planete5);
+        final ImageView vaisseau =findViewById(R.id.iv_vessel);
 
         final TextView pop1 = findViewById(R.id.tv_population1);
         final TextView pop2 = findViewById(R.id.tv_population2);
@@ -89,7 +93,7 @@ public class GalaxyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 listPlanete1.setVisibility(View.VISIBLE);
                 pop1.setVisibility(View.VISIBLE);
-                ;
+
             }
         });
 
@@ -128,9 +132,18 @@ public class GalaxyActivity extends AppCompatActivity {
         pop1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String planete="1";
-                intent.putExtra("planete",planete);
-                startActivity(intent);
+
+                ObjectAnimator.ofFloat(vaisseau, "translationX", 0, -300).start();
+                ObjectAnimator.ofFloat(vaisseau, "translationY", 0, -600).start();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        String planete="1";
+                        intent.putExtra("planete",planete);
+                        startActivity(intent);
+                    }
+                }, SPLASH_TIME_OUT);
+
 
             }
         });
@@ -138,9 +151,16 @@ public class GalaxyActivity extends AppCompatActivity {
         pop2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String planete="2";
-                intent.putExtra("planete",planete);
-                startActivity(intent);
+                ObjectAnimator.ofFloat(vaisseau, "translationX", 0, -300).start();
+                ObjectAnimator.ofFloat(vaisseau, "translationY", 0, -1200).start();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        String planete="2";
+                        intent.putExtra("planete",planete);
+                        startActivity(intent);
+                    }
+                }, SPLASH_TIME_OUT);
 
             }
         });
@@ -148,9 +168,15 @@ public class GalaxyActivity extends AppCompatActivity {
         pop3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String planete="3";
-                intent.putExtra("planete",planete);
-                startActivity(intent);
+                ObjectAnimator.ofFloat(vaisseau, "translationY", 0, -1700).start();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        String planete="3";
+                        intent.putExtra("planete",planete);
+                        startActivity(intent);
+                    }
+                }, SPLASH_TIME_OUT);
 
             }
         });
@@ -158,9 +184,16 @@ public class GalaxyActivity extends AppCompatActivity {
         pop4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String planete="4";
-                intent.putExtra("planete",planete);
-                startActivity(intent);
+                ObjectAnimator.ofFloat(vaisseau, "translationX", 0, 300).start();
+                ObjectAnimator.ofFloat(vaisseau, "translationY", 0, -1200).start();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        String planete="4";
+                        intent.putExtra("planete",planete);
+                        startActivity(intent);
+                    }
+                }, SPLASH_TIME_OUT);
 
             }
         });
@@ -168,9 +201,16 @@ public class GalaxyActivity extends AppCompatActivity {
         pop5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String planete="5";
-                intent.putExtra("planete",planete);
-                startActivity(intent);
+                ObjectAnimator.ofFloat(vaisseau, "translationX", 0, 300).start();
+                ObjectAnimator.ofFloat(vaisseau, "translationY", 0, -600).start();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        String planete="5";
+                        intent.putExtra("planete",planete);
+                        startActivity(intent);
+                    }
+                }, SPLASH_TIME_OUT);
 
             }
         });

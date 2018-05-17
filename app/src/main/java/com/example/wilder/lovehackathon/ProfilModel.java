@@ -10,9 +10,10 @@ public class ProfilModel {
    private String eyeColor;
     private String skinColor;
     private String Species;
+    private String planet;
 
 
-    public ProfilModel(String eyeColor, String gender, String hairColor, String height, String image, String mass, String name, String skinColor, String species) {
+    public ProfilModel(String eyeColor, String gender, String hairColor, String height, String image, String mass, String name, String skinColor, String species, String planet) {
         this.image = image;
         this.name = name;
         this.gender = gender;
@@ -21,6 +22,7 @@ public class ProfilModel {
         this.hairColor = hairColor;
         this.eyeColor = eyeColor;
         this.skinColor = skinColor;
+        this.planet = planet;
         Species = species;
     }
 
@@ -98,5 +100,17 @@ public class ProfilModel {
 
     public void setSpecies(String species) {
         Species = species;
+    }
+
+    public String getPlanet() {
+        return planet;
+    }
+
+    public void setPlanet(String planet) {
+        this.planet = planet;
+    }
+
+    public ProfilModel(String planet) {
+        this.planet = planet;
     }
 }

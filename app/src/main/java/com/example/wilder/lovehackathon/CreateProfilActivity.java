@@ -64,7 +64,7 @@ public class CreateProfilActivity extends AppCompatActivity {
 
                 
 
-                }
+
 
         });
     }

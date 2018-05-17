@@ -1,5 +1,6 @@
 package com.example.wilder.lovehackathon;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,10 @@ public class GalaxyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_galaxy);
+
+
+        final Intent intent = new Intent(GalaxyActivity.this,PlaneteActivity.class);
+
 
         final ListView listPlanete1 = findViewById(R.id.lv1);
         final ListView listPlanete2 = findViewById(R.id.lv2);
@@ -87,6 +92,7 @@ public class GalaxyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 listPlanete1.setVisibility(View.VISIBLE);
                 pop1.setVisibility(View.VISIBLE);
+                ;
             }
         });
 
@@ -125,6 +131,9 @@ public class GalaxyActivity extends AppCompatActivity {
         pop1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String planete="1";
+                intent.putExtra("planete",planete);
+                startActivity(intent);
 
             }
         });
@@ -132,6 +141,9 @@ public class GalaxyActivity extends AppCompatActivity {
         pop2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String planete="2";
+                intent.putExtra("planete",planete);
+                startActivity(intent);
 
             }
         });
@@ -139,6 +151,9 @@ public class GalaxyActivity extends AppCompatActivity {
         pop3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String planete="3";
+                intent.putExtra("planete",planete);
+                startActivity(intent);
 
             }
         });
@@ -146,6 +161,9 @@ public class GalaxyActivity extends AppCompatActivity {
         pop4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String planete="4";
+                intent.putExtra("planete",planete);
+                startActivity(intent);
 
             }
         });
@@ -153,6 +171,9 @@ public class GalaxyActivity extends AppCompatActivity {
         pop5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String planete="5";
+                intent.putExtra("planete",planete);
+                startActivity(intent);
 
             }
         });

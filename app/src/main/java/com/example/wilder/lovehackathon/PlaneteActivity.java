@@ -3,6 +3,8 @@ package com.example.wilder.lovehackathon;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -24,6 +26,8 @@ public class PlaneteActivity extends AppCompatActivity {
         TextView tvEyesColor = findViewById(R.id.txt_meyes);
         TextView tvSkinColor = findViewById(R.id.txt_mskin);
         TextView tvSpecies = findViewById(R.id.txt_mspecies);
+        ImageView ivBackground = findViewById(R.id.iv_background);
+
 
 
         Intent intent = getIntent();

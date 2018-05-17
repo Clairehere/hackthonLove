@@ -1,5 +1,6 @@
 package com.example.wilder.lovehackathon;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,10 @@ public class GalaxyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_galaxy);
+
+
+        final Intent intent = new Intent(GalaxyActivity.this,PlaneteActivity.class);
+
 
         final ListView listPlanete1 = findViewById(R.id.lv1);
         final ListView listPlanete2 = findViewById(R.id.lv2);
@@ -65,7 +70,36 @@ public class GalaxyActivity extends AppCompatActivity {
 
         mList5.add(new ProfilModel(null, null, null, null, null, null, "Thomas", null, null,"Wild"));
         mList5.add(new ProfilModel(null, null, null, null, null, null, "Hedie", null, null,"Wild"));
+
+        mList1.add(new ProfilModel("Bleu Vert", "Femme", "auburn", "1m73", "null", "67 kg", "Mon Mothma", "light", "human"));
+        mList1.add(new ProfilModel("Marron", "Femme", "Brun", "1m57", "null", null, "Cordé", "light", "human"));
+        mList1.add(new ProfilModel("Bleu", "Femme", "Or", "2m", null, "76 kg", "Captain Phasma", "pale", "human"));
+        mList1.add(new ProfilModel("Marron", "Femme", null, null, null, null, "Leia Organa", null, null));
+        listPlanete1.setAdapter(adapter1);
+
+
+        mList2.add(new ProfilModel("Bleu", "Femme", "Marron", "1m65", null, "75 kg", "Beru Whitesun lars", "Blanche", "Humain"));
+        mList2.add(new ProfilModel("Marron clair", "Femme", "Marron", "1m65", null, "45 kg", "Padmé Amidala", " Blanche", "Humain"));
+        mList2.add(new ProfilModel("Bleu Royal", "Femelle", "Noir", "1m76", null, "56 kg", "Luminara Unduli", "Verte", "Mirilian"));
+        mList2.add(new ProfilModel("Jaune", "Femelle", "Blonde", "1m68", null, "55 kg", "Zam Wesell", "Verte", "Clawdite"));
+        mList2.add(new ProfilModel("Noir", "Femelle", "Gris et Blanc", "1m87", null, "57 kg", "Shaak Ti", "Rouge", "Trogruta"));
+        listPlanete2.setAdapter(adapter2);
+
+        mList3.add(new ProfilModel(null, null, null, null, null, null, "Thomas", null, null));
+        mList3.add(new ProfilModel(null, null, null, null, null, null, "Hedie", null, null));
+        listPlanete3.setAdapter(adapter3);
+
+        mList4.add(new ProfilModel("Marron", "Femme", "Marron", "1m63", null, "50 kg", "Shmi Skywalker", "Blanche", "Humain"));
+        mList4.add(new ProfilModel("Noir", "Femme", "Marron", "1m70", null, "54kg", "Rey", "Blanche", "Humain"));
+        listPlanete4.setAdapter(adapter4);
+
+        mList5.add(new ProfilModel("Bleu", "Femelle", "Noir", "1m66", null, "50 kg", "Barriss Offee", "Jaune", "Mirialan"));
+        mList5.add(new ProfilModel("Noir", "Femelle", "Chauve", "2m13", null, "46 kg", "Taun We", "Blanche", "Kaminoan"));
+        mList5.add(new ProfilModel("Blanc", "Femelle", "En train de pousser", "1m78", null, "48", "Sly Moore", "Pale", "Umbaran"));
+
         listPlanete5.setAdapter(adapter5);
+
+
 
 
         ImageView planete1 = findViewById(R.id.iv_planete1);
@@ -85,6 +119,7 @@ public class GalaxyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 listPlanete1.setVisibility(View.VISIBLE);
                 pop1.setVisibility(View.VISIBLE);
+                ;
             }
         });
 
@@ -123,6 +158,9 @@ public class GalaxyActivity extends AppCompatActivity {
         pop1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String planete="1";
+                intent.putExtra("planete",planete);
+                startActivity(intent);
 
             }
         });
@@ -130,6 +168,9 @@ public class GalaxyActivity extends AppCompatActivity {
         pop2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String planete="2";
+                intent.putExtra("planete",planete);
+                startActivity(intent);
 
             }
         });
@@ -137,6 +178,9 @@ public class GalaxyActivity extends AppCompatActivity {
         pop3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String planete="3";
+                intent.putExtra("planete",planete);
+                startActivity(intent);
 
             }
         });
@@ -144,6 +188,9 @@ public class GalaxyActivity extends AppCompatActivity {
         pop4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String planete="4";
+                intent.putExtra("planete",planete);
+                startActivity(intent);
 
             }
         });
@@ -151,6 +198,9 @@ public class GalaxyActivity extends AppCompatActivity {
         pop5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String planete="5";
+                intent.putExtra("planete",planete);
+                startActivity(intent);
 
             }
         });

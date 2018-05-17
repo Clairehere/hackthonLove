@@ -1,5 +1,6 @@
 package com.example.wilder.lovehackathon;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -54,10 +55,17 @@ public class CreateProfilActivity extends AppCompatActivity {
                 final String species = etSpecies.getText().toString();
 
                 ProfilModel profilModel = new ProfilModel(imgProfil, name, genre, height, weight, hairColor, eyesColor, skinColor, species);
-                String key = profilRef.push().getKey();
+              String key = profilRef.push().getKey();
                 profilRef.child(key).setValue(profilModel);
+                Intent intent = new Intent(CreateProfilActivity.this, GalaxyActivity.class);
+                startActivity(intent);
+
+            }
+
+                
 
                 }
+
         });
     }
 }

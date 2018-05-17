@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">LoveHackathon</string>
+    <string name="name">Name</string>
+    <string name="genre">Genre</string>
+    <string name="height">height</string>
+    <string name="hair_color">Hair color</string>
+    <string name="eyes_color">Eyes color</string>
+    <string name="skin_color">Skin color</string>
+    <string name="species">Species</string>
 </resources>

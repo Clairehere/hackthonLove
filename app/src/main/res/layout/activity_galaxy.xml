@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GalaxyActivity">
+
+    <ImageView
+        android:id="@+id/iv_vessel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_population5"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/tv_population1"
+        app:layout_constraintTop_toBottomOf="@+id/lv5"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_planete1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_population2"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ImageView
+        android:id="@+id/iv_planete2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_population3"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ImageView
+        android:id="@+id/iv_planete3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        tools:layout_editor_absoluteX="123dp" />
+
+    <ImageView
+        android:id="@+id/iv_planete4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv3"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ImageView
+        android:id="@+id/iv_planete5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv4"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/tv_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOM"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <TextView
+        android:id="@+id/tv_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="NOM"
+        app:layout_constraintStart_toStartOf="@+id/iv_planete2"
+        app:layout_constraintTop_toBottomOf="@+id/iv_planete2" />
+
+    <TextView
+        android:id="@+id/tv_name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="NOM"
+        app:layout_constraintStart_toStartOf="@+id/iv_planete3"
+        app:layout_constraintTop_toBottomOf="@+id/iv_planete3" />
+
+    <TextView
+        android:id="@+id/tv_name4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="NOM"
+        app:layout_constraintStart_toStartOf="@+id/iv_planete4"
+        app:layout_constraintTop_toBottomOf="@+id/iv_planete4" />
+
+    <TextView
+        android:id="@+id/tv_name5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="NOM"
+        app:layout_constraintStart_toStartOf="@+id/iv_planete5"
+        app:layout_constraintTop_toBottomOf="@+id/iv_planete5" />
+
+    <TextView
+        android:id="@+id/tv_population1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Population"
+        app:layout_constraintStart_toStartOf="@+id/tv_name1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name1" />
+
+    <TextView
+        android:id="@+id/tv_population2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Population"
+        app:layout_constraintStart_toStartOf="@+id/tv_name2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name2" />
+
+    <TextView
+        android:id="@+id/tv_population3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Population"
+        app:layout_constraintStart_toStartOf="@+id/tv_name3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name3" />
+
+    <TextView
+        android:id="@+id/tv_population4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Population"
+        app:layout_constraintStart_toStartOf="@+id/tv_name4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name4" />
+
+    <TextView
+        android:id="@+id/tv_population5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Population"
+        app:layout_constraintStart_toStartOf="@+id/tv_name5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name5" />
+
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="81dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_population1"
+        app:layout_constraintStart_toEndOf="@+id/iv_planete1"
+        app:layout_constraintTop_toTopOf="@+id/iv_planete1" />
+
+    <ListView
+        android:id="@+id/lv2"
+        android:layout_width="81dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_population2"
+        app:layout_constraintStart_toEndOf="@+id/iv_planete2"
+        app:layout_constraintTop_toTopOf="@+id/iv_planete2" />
+
+    <ListView
+        android:id="@+id/lv3"
+        android:layout_width="81dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_population3"
+        app:layout_constraintStart_toEndOf="@+id/iv_planete3"
+        app:layout_constraintTop_toTopOf="@+id/iv_planete3" />
+
+    <ListView
+        android:id="@+id/lv4"
+        android:layout_width="81dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_population4"
+        app:layout_constraintEnd_toStartOf="@+id/iv_planete4"
+        app:layout_constraintTop_toTopOf="@+id/iv_planete4" />
+
+    <ListView
+        android:id="@+id/lv5"
+        android:layout_width="81dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_population5"
+        app:layout_constraintEnd_toStartOf="@+id/iv_planete5"
+        app:layout_constraintTop_toTopOf="@+id/iv_planete5" />
+
+</android.support.constraint.ConstraintLayout>

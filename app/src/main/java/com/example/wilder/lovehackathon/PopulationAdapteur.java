@@ -1,14 +1,14 @@
 package com.example.wilder.lovehackathon;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
@@ -29,27 +29,8 @@ public class PopulationAdapteur extends ArrayAdapter<ProfilModel> {
         TextView tvName = (TextView) convertView.findViewById(R.id.tv_name_item);
         tvName.setText(population.getName());
 
-
-/**
-        ImageView imgProfil= convertView.findViewById(R.id.iv_profil_item);
-        Drawable drawableProfil= ContextCompat.getDrawable(getContext(), population.getProfil());
-        imgProfil.setImageDrawable(drawableProfil);
-
-        ImageView imgElement1=convertView.findViewById(R.id.iv_element1);
-        Drawable drawableElement1=ContextCompat.getDrawable(getContext(),population.getElement1());
-        imgElement1.setImageDrawable(drawableElement1);
-
-        ///*si l'element2est appellé alors*/
-        /**ImageView imgElement2=convertView.findViewById(R.id.iv_element2);
-        if (population.getElement2()!=0){
-
-            Drawable drawableElement2=ContextCompat.getDrawable(getContext(),population.getElement2());
-            imgElement2.setImageDrawable(drawableElement2);}
-        else{
-            imgElement2.setImageDrawable(null);
-
-        }**/
-
+        ImageView imgProfil = convertView.findViewById(R.id.iv_profil_item);
+        Glide.with(parent.getContext()).load(population.getProfil().toString()).into(imgProfil);
 
         // Return the completed view to render on screen
         return convertView;

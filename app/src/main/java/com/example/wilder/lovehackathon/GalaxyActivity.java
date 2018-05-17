@@ -45,6 +45,7 @@ public class GalaxyActivity extends AppCompatActivity {
         PopulationAdapteur adapter5 = new PopulationAdapteur(GalaxyActivity.this, mList5);
 
 
+
         mList1.add(new ProfilModel("Bleu Vert", "Femme", "auburn", "1m73", "https://vignette.wikia.nocookie.net/starwars/images/b/b7/MP-MonMothma.png", "67 kg", "Mon Mothma", "light", "Humain"));
         mList1.add(new ProfilModel("Marron", "Femme", "Brun", "1m57", "https://vignette.wikia.nocookie.net/starwars/images/b/b6/Cord%C3%A9_-_SW_Card_Trader.png", "60 kg", "Cordé", "light", "Humain"));
         mList1.add(new ProfilModel("Bleu", "Femme", "Or", "2m", "https://vignette.wikia.nocookie.net/starwars/images/0/02/Phasma.png", "76 kg", "Captain Phasma", "pale", "human"));
@@ -59,21 +60,17 @@ public class GalaxyActivity extends AppCompatActivity {
         mList2.add(new ProfilModel("Noir", "Femelle", "Gris et Blanc", "1m87", "https://vignette.wikia.nocookie.net/starwars/images/2/20/Shaak_Ti_closeup-SWE.png", "57 kg", "Shaak Ti", "Rouge", "Trogruta"));
         listPlanete2.setAdapter(adapter2);
 
-        mList3.add(new ProfilModel(null, null, null, null, null, null, "Thomas", null, null));
-        mList3.add(new ProfilModel(null, null, null, null, null, null, "Hedie", null, null));
+        mList3.add(new ProfilModel(null, null, null, null, null, null, "Thomas", null, null,"Wild"));
+        mList3.add(new ProfilModel(null, null, null, null, null, null, "Hedie", null, null,"Wild"));
         listPlanete3.setAdapter(adapter3);
-
         mList4.add(new ProfilModel("Marron", "Femme", "Marron", "1m63", "https://vignette.wikia.nocookie.net/starwars/images/a/ad/ShmiSkywalkerDatabank_%28Repurposed%29.jpeg", "50 kg", "Shmi Skywalker", "Blanche", "Humain"));
         mList4.add(new ProfilModel("Noir", "Femme", "Marron", "1m70", "https://vignette.wikia.nocookie.net/starwars/images/f/f8/ReyTLJEntertainmentWeeklyNovember.png", "54kg", "Rey", "Blanche", "Humain"));
         listPlanete4.setAdapter(adapter4);
 
         mList5.add(new ProfilModel("Bleu", "Femelle", "Noir", "1m66", "https://vignette.wikia.nocookie.net/starwars/images/3/37/Barrisprofile2.jpg", "50 kg", "Barriss Offee", "Jaune", "Mirialan"));
         mList5.add(new ProfilModel("Noir", "Femelle", "Chauve", "2m13", "https://vignette.wikia.nocookie.net/starwars/images/9/9c/TaunWe.jpg", "46 kg", "Taun We", "Blanche", "Kaminoan"));
-        mList5.add(new ProfilModel("Blanc", "Femelle", "En train de pousser", "1m78", "https://vignette.wikia.nocookie.net/starwars/images/e/ec/SlyMooreIsWatchingYouPoop-OfficialPix.jpg", "48", "Sly Moore", "Pale", "Umbaran"));
+        mList5.add(new ProfilModel("Blanc", "Femelle", "En train de pousser", "1m78", "https://vignette.wikia.nocookie.net/starwars/images/e/ec/SlyMooreIsWatchingYouPoop-OfficialPix.jpg", "48", "Sly Moore", "Pale", "Umbaran"));       
         listPlanete5.setAdapter(adapter5);
-
-
-
 
         ImageView planete1 = findViewById(R.id.iv_planete1);
         ImageView planete2 = findViewById(R.id.iv_planete2);

@@ -1,34 +1,39 @@
 package com.example.wilder.lovehackathon;
 
 public class ProfilModel {
-    String profil;
-    String name;
-    String genre;
-    String height;
-    String weight;
-    String hairColor;
-    String eyesColor;
-    String skinColor;
-    String Species;
+   private String image;
+   private String name;
+    private String gender;
+    private String height;
+    private String mass;
+    private String hairColor;
+   private String eyeColor;
+    private String skinColor;
+    private String Species;
 
-    public ProfilModel(String profil, String name, String genre, String height, String weight, String hairColor, String eyesColor, String skinColor, String species) {
-        this.profil = profil;
+
+    public ProfilModel(String eyeColor, String gender, String hairColor, String height, String image, String mass, String name, String skinColor, String species) {
+        this.image = image;
         this.name = name;
-        this.genre = genre;
+        this.gender = gender;
         this.height = height;
-        this.weight = weight;
+        this.mass = mass;
         this.hairColor = hairColor;
-        this.eyesColor = eyesColor;
+        this.eyeColor = eyeColor;
         this.skinColor = skinColor;
         Species = species;
     }
 
-    public String getProfil() {
-        return profil;
+    public ProfilModel() {
     }
 
-    public void setProfil(String profil) {
-        this.profil = profil;
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getName() {
@@ -39,12 +44,12 @@ public class ProfilModel {
         this.name = name;
     }
 
-    public String getGenre() {
-        return genre;
+    public String getGender() {
+        return gender;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public String getHeight() {
@@ -55,12 +60,12 @@ public class ProfilModel {
         this.height = height;
     }
 
-    public String getWeight() {
-        return weight;
+    public String getMass() {
+        return mass;
     }
 
-    public void setWeight(String weight) {
-        this.weight = weight;
+    public void setMass(String mass) {
+        this.mass = mass;
     }
 
     public String getHairColor() {
@@ -71,12 +76,12 @@ public class ProfilModel {
         this.hairColor = hairColor;
     }
 
-    public String getEyesColor() {
-        return eyesColor;
+    public String getEyeColor() {
+        return eyeColor;
     }
 
-    public void setEyesColor(String eyesColor) {
-        this.eyesColor = eyesColor;
+    public void setEyeColor(String eyeColor) {
+        this.eyeColor = eyeColor;
     }
 
     public String getSkinColor() {

@@ -47,6 +47,7 @@ public class PlaneteActivity extends AppCompatActivity {
         final String planeteNumero = intent.getStringExtra("planete");
         //remplir les données
         if (planeteNumero.equals("1")) {
+            ivBackground.setBackgroundResource(R.drawable.tatooine);
             numeroPointeur(ivPointeur1, "https://vignette.wikia.nocookie.net/starwars/images/b/b7/MP-MonMothma.png", "Claire", "femme", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur2, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur3, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
@@ -55,6 +56,7 @@ public class PlaneteActivity extends AppCompatActivity {
         }
 
         if (planeteNumero.equals("2")) {
+            ivBackground.setBackgroundResource(R.drawable.coruscant);
             numeroPointeur(ivPointeur1, "u", "Claire", "femme", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur2, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur3, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
@@ -64,6 +66,7 @@ public class PlaneteActivity extends AppCompatActivity {
         }
 
         if (planeteNumero.equals("3")) {
+            ivBackground.setBackgroundResource(R.drawable.deathstar);
             numeroPointeur(ivPointeur1, "u", "Claire", "femme", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur2, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur3, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
@@ -72,11 +75,13 @@ public class PlaneteActivity extends AppCompatActivity {
 
         }
         if (planeteNumero.equals("4")) {
+            ivBackground.setBackgroundResource(R.drawable.dantooine);
             numeroPointeur(ivPointeur1, "u", "Claire", "femme", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur2, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
 
         }
         if (planeteNumero.equals("5")) {
+            ivBackground.setBackgroundResource(R.drawable.alderaan);
             numeroPointeur(ivPointeur1, "u", "Claire", "femme", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur2, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur3, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);

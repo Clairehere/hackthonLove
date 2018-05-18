@@ -55,6 +55,7 @@ public class GalaxyActivity extends AppCompatActivity {
             */
         }
 
+
             final ListView listPlanete1 = findViewById(R.id.lv1);
             final ListView listPlanete2 = findViewById(R.id.lv2);
             final ListView listPlanete3 = findViewById(R.id.lv3);

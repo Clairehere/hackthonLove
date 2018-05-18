@@ -1,9 +1,11 @@
 package com.example.wilder.lovehackathon;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -20,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class PlaneteActivity extends AppCompatActivity {
+    private static int SPLASH_TIME_OUT = 5000;
 
 
     @Override
@@ -41,18 +44,10 @@ public class PlaneteActivity extends AppCompatActivity {
         ImageView ivPointeur3 = findViewById(R.id.img_locone3);
         ImageView ivPointeur4 = findViewById(R.id.img_locone4);
         ImageView ivPointeur5 = findViewById(R.id.img_locone5);
+        final ImageView gif = findViewById(R.id.iv_gif);
 
-
-        final String imgProfil = null;
-        final String name = null;
-         final String genre = null;
-        final String height = null;
-        final String weight = null;
-         final String hairColor = null;
-         final String eyesColor = null;
-         final String skinColor = null;
-         final String species = null;
-
+        final Button btnLike = findViewById(R.id.button_like);
+        final Button btnNotLike = findViewById(R.id.button_not_like);
 
 
         Intent intent = getIntent();
@@ -64,6 +59,7 @@ public class PlaneteActivity extends AppCompatActivity {
             ivPointeur1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     final String imgProfil = null;
                     final String name = "fege";
                     final String genre = "frg";
@@ -73,7 +69,9 @@ public class PlaneteActivity extends AppCompatActivity {
                     final String eyesColor = "fegr";
                     final String skinColor = null;
                     final String species = null;
-                    remplir(imgProfil,tvName, name, tvGenre, genre, tvHeight, height, tvWeight, weight, tvHairColor, hairColor, tvEyesColor, eyesColor, tvSkinColor, skinColor, tvSpecies, species);
+                    String planete = "planete";
+                    pointeurNotLike(imgProfil,tvName,name,tvGenre,genre,tvHeight,height,tvWeight,weight,tvHairColor,hairColor,tvEyesColor,eyesColor,tvSkinColor,skinColor,tvSpecies,species,btnNotLike,gif);
+                    pointeurLike(imgProfil,tvName,name,tvGenre,genre,tvHeight,height,tvWeight,weight,tvHairColor,hairColor,tvEyesColor,eyesColor,tvSkinColor,skinColor,tvSpecies,species,btnLike,gif,planete);
 
 
                 }
@@ -81,21 +79,19 @@ public class PlaneteActivity extends AppCompatActivity {
             ivPointeur2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    remplir(imgProfil,tvName, name, tvGenre, genre, tvHeight, height, tvWeight, weight, tvHairColor, hairColor, tvEyesColor, eyesColor, tvSkinColor, skinColor, tvSpecies, species);
+
 
                 }
             });
             ivPointeur3.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    remplir(imgProfil,tvName, name, tvGenre, genre, tvHeight, height, tvWeight, weight, tvHairColor, hairColor, tvEyesColor, eyesColor, tvSkinColor, skinColor, tvSpecies, species);
 
                 }
             });
             ivPointeur4.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    remplir(imgProfil,tvName, name, tvGenre, genre, tvHeight, height, tvWeight, weight, tvHairColor, hairColor, tvEyesColor, eyesColor, tvSkinColor, skinColor, tvSpecies, species);
 
                 }
             });
@@ -148,17 +144,63 @@ public class PlaneteActivity extends AppCompatActivity {
 
     }
 
-    public void remplir(String img, TextView et1, String s1, TextView et2,String s2, TextView et3, String s3, TextView et4, String s4 , TextView et5, String s5, TextView et6, String s6, TextView et7, String s7 , TextView et8, String s8) {
-        ImageView imgProfil = findViewById(R.id.img_meeting);
-        Glide.with(PlaneteActivity.this).load(img).into(imgProfil);
 
-        et1.setText(s1);
-        et2.setText(s2);
-        et3.setText(s3);
-        et4.setText(s4);
-        et5.setText(s5);
-        et6.setText(s6);
-        et7.setText(s7);
-        et8.setText(s8);
-    }
+
+public void pointeurLike(String img, TextView et1, final String nameM, TextView et2, String genreM, TextView et3, String heightM, TextView et4, String weightM, TextView et5, String hairM, TextView et6, String eyesM, TextView et7, String skinM, TextView et8, String spacies, Button btnLike, final ImageView gif, final String planete){
+    et1.setText(nameM);
+    et2.setText(genreM);
+    et3.setText(heightM);
+    et4.setText(weightM);
+    et5.setText(hairM);
+    et6.setText(eyesM);
+    et7.setText(skinM);
+    et8.setText(spacies);
+
+    btnLike.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            ArrayList<LikeModel> mList1 = new ArrayList<>();
+            ListView listPlanete1 = findViewById(R.id.lv_like_planete);
+            final LikeAdapteur adapter1 = new LikeAdapteur(PlaneteActivity.this, mList1);
+            gif.setVisibility(View.VISIBLE);
+            Glide.with(PlaneteActivity.this).load(R.drawable.kiss).into(gif);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    gif.setVisibility(View.INVISIBLE);
+                }
+            }, SPLASH_TIME_OUT);
+
+            mList1.add(new LikeModel(nameM, planete));
+            listPlanete1.setAdapter(adapter1);
+
+        }
+    });
+}
+
+public void pointeurNotLike(String img, TextView et1, final String nameM, TextView et2, String genreM, TextView et3, String heightM, TextView et4, String weightM, TextView et5, String hairM, TextView et6, String eyesM, TextView et7, String skinM, TextView et8, String spacies,Button btnNotLike, final ImageView gif){
+    et1.setText(nameM);
+    et2.setText(genreM);
+    et3.setText(heightM);
+    et4.setText(weightM);
+    et5.setText(hairM);
+    et6.setText(eyesM);
+    et7.setText(skinM);
+    et8.setText(spacies);
+    btnNotLike.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            gif.setVisibility(View.VISIBLE);
+            Glide.with(PlaneteActivity.this).load(R.drawable.bye).into(gif);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    gif.setVisibility(View.INVISIBLE);
+                }
+            }, SPLASH_TIME_OUT);
+
+        }
+    });
+}
+
 }

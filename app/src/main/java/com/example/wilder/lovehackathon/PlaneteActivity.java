@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class PlaneteActivity extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 5000;
-    final ArrayList<LikeModel> mList1 = new ArrayList<>();
+    final ArrayList<ProfilModel> mList1 = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,7 @@ public class PlaneteActivity extends AppCompatActivity {
         final String planeteNumero = intent.getStringExtra("planete");
         //remplir les données
         if (planeteNumero.equals("1")) {
-            numeroPointeur(ivPointeur1, "u", "Claire", "femme", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
+            numeroPointeur(ivPointeur1, "https://vignette.wikia.nocookie.net/starwars/images/b/b7/MP-MonMothma.png", "Claire", "femme", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur2, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur3, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur4, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
@@ -137,7 +137,7 @@ public class PlaneteActivity extends AppCompatActivity {
                     }
                 }, SPLASH_TIME_OUT);
 
-                mList1.add(new LikeModel(img, nameM));
+                mList1.add(new ProfilModel(img, nameM,planete));
                 listPlanete1.setAdapter(adapter1);
 
             }

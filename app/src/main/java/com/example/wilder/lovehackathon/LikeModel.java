@@ -4,6 +4,7 @@ public class LikeModel {
     private String name;
     private String planete;
 
+
     public LikeModel(String name, String planete) {
         this.name = name;
         this.planete = planete;

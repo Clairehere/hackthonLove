@@ -30,10 +30,12 @@ public class LikeAdapteur extends ArrayAdapter<ProfilModel> {
         TextView tvName = (TextView) convertView.findViewById(R.id.tv_name_like);
         tvName.setText(likeModel.getName());
 
-        TextView tvPlanete = (TextView) convertView.findViewById(R.id.tv_planete_like);
-        tvName.setText(likeModel.getPlanet());
 
-        TextView tvTel = (TextView) convertView.findViewById(R.id.tv_planete_like);
+        ImageView planete = convertView.findViewById(R.id.iv_planete);
+        Glide.with(parent.getContext()).load(likeModel.getPlanet()).into(planete);
+
+        ImageView imgProfil = convertView.findViewById(R.id.iv_profil);
+        Glide.with(parent.getContext()).load(likeModel.getImage()).into(imgProfil);
 
         return convertView;
     }

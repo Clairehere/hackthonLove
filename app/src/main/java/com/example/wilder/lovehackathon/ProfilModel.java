@@ -11,6 +11,15 @@ public class ProfilModel {
     private String skinColor;
     private String Species;
     private String planet;
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
     private String tel;
 
 
@@ -45,10 +54,11 @@ public class ProfilModel {
     public ProfilModel() {
     }
 
-    public ProfilModel(String name, String planet, String tel) {
+    public ProfilModel(String image, String name, String planet) {
+        this.image =image;
         this.name = name;
         this.planet = planet;
-        this.tel = tel;
+
     }
 
 

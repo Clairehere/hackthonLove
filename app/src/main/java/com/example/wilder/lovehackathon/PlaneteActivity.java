@@ -186,7 +186,7 @@ public class PlaneteActivity extends AppCompatActivity {
 
 
                 gif.setVisibility(View.VISIBLE);
-                Glide.with(PlaneteActivity.this).load(R.drawable.kiss).into(gif);
+                Glide.with(PlaneteActivity.this).load(R.drawable.light).into(gif);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {

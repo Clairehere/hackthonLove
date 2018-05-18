@@ -1,6 +1,9 @@
 package com.example.wilder.lovehackathon;
 
-public class ProfilModel {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class ProfilModel implements Parcelable{
    private String image;
    private String name;
     private String gender;
@@ -12,6 +15,32 @@ public class ProfilModel {
     private String Species;
     private String planet;
 
+    protected ProfilModel(Parcel in) {
+        image = in.readString();
+        name = in.readString();
+        gender = in.readString();
+        height = in.readString();
+        mass = in.readString();
+        hairColor = in.readString();
+        eyeColor = in.readString();
+        skinColor = in.readString();
+        Species = in.readString();
+        planet = in.readString();
+        tel = in.readString();
+    }
+
+    public static final Creator<ProfilModel> CREATOR = new Creator<ProfilModel>() {
+        @Override
+        public ProfilModel createFromParcel(Parcel in) {
+            return new ProfilModel(in);
+        }
+
+        @Override
+        public ProfilModel[] newArray(int size) {
+            return new ProfilModel[size];
+        }
+    };
+
     public String getTel() {
         return tel;
     }
@@ -21,8 +50,6 @@ public class ProfilModel {
     }
 
     private String tel;
-
-
 
 
     public ProfilModel(String eyeColor, String gender, String hairColor, String height, String image, String mass, String name, String skinColor, String species, String planet) {
@@ -144,5 +171,25 @@ public class ProfilModel {
 
     public ProfilModel(String planet) {
         this.planet = planet;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(image);
+        dest.writeString(name);
+        dest.writeString(gender);
+        dest.writeString(height);
+        dest.writeString(mass);
+        dest.writeString(hairColor);
+        dest.writeString(eyeColor);
+        dest.writeString(skinColor);
+        dest.writeString(Species);
+        dest.writeString(planet);
+        dest.writeString(tel);
     }
 }

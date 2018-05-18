@@ -61,25 +61,32 @@ public class PlaneteActivity extends AppCompatActivity {
         final String planeteNumero = intent.getStringExtra("planete");
         //remplir les données
         if (planeteNumero.equals("1")) {
-
             numeroPointeur(ivPointeur1, "https://vignette.wikia.nocookie.net/starwars/images/b/b7/MP-MonMothma.png", "Mon Mothma", "Femme", "1m73", "67 kg kg", "auburn", "Bleu Vert", "light", "Humain", "Tatoine", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur2, "https://vignette.wikia.nocookie.net/starwars/images/b/b6/Cord%C3%A9_-_SW_Card_Trader.png", "Cordé", "Femme", "1m57", "60 kg", "Brun", "Marron", "light", "Humain", "Tatoine", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur3, "https://vignette.wikia.nocookie.net/starwars/images/0/02/Phasma.png", "Captain Phasma", "Femme", "2m", "76 kg", "Or", "Bleu", "Pale", "Humain", "Tatoine", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur4, "https://vignette.wikia.nocookie.net/starwars/images/f/fc/Leia_Organa_TLJ.png", "Leia Organa", "Femme", "1m50", "51 kg", "Brun", "Marron", "Claire", "Humain", "Tatoine", btnLike, btnNotLike, gif);
 
 
+            ivBackground.setBackgroundResource(R.drawable.tatooine);
+
+
         }
 
         if (planeteNumero.equals("2")) {
+
             numeroPointeur(ivPointeur1, "https://vignette.wikia.nocookie.net/starwars/images/c/cc/BeruCardTrader.png", "Beru Whitesun lars", "Femme", "1m65", "75 kg", "Marron", "Bleu", "Blanche", "Humain", "Corsucant", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur2, "https://vignette.wikia.nocookie.net/starwars/images/b/b2/Padmegreenscrshot.jpg", "Padmé Amidala", "Femme", "1m65", "45 kg", "Marron", "Marron clair", "Blanche", "Humain", "Corsucant", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur3, "https://vignette.wikia.nocookie.net/starwars/images/2/21/LuminaraHS-SWE_%28new%29.png", "Luminara Unduli", "Femelle", "1m76", "56 kg", "Noir", "Bleu Royal", "Verte", "Mirilian", "Corsucant", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur4, "https://vignette.wikia.nocookie.net/starwars/images/7/7d/Clawdite.jpg", "Zam Wesell", "Femelle", "1m68", "55 kg", "Blonde", "Jaune", "verte", "Clawdite", "Corsucant", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur5, "https://vignette.wikia.nocookie.net/starwars/images/2/20/Shaak_Ti_closeup-SWE.png", "Shaak Ti", "Femelle", "1m87", "57 kg", "Gris et Blanc", "Noir", "Rouge", "Trogruta", "Corsucant", btnLike, btnNotLike, gif);
 
+            ivBackground.setBackgroundResource(R.drawable.coruscant);
+
+
         }
 
         if (planeteNumero.equals("3")) {
+
             numeroPointeur(ivPointeur1, "u", "Claire", "femme", "1m65", "41 kg", "Blond", "Marron", "Blanche", "Humain", "Wild", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur2, "u", "Thomas", "Homme", "1m78", "80 kg", "Brun", "Marron", "Blanche", "Humain", "Wild", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur3, "u", "Hédi", "Homme", "1m74", "100 kg", "Noir", "Marron", "Marron", "Humain", "Wild", btnLike, btnNotLike, gif);
@@ -94,6 +101,21 @@ public class PlaneteActivity extends AppCompatActivity {
             numeroPointeur(ivPointeur1, "https://vignette.wikia.nocookie.net/starwars/images/3/37/Barrisprofile2.jpg", "Barriss Offee", "Femelle", "1m66", "50 kg", "Noir", "Bleu", "Jaune", "Mirilian", "Alderaan", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur2, "https://vignette.wikia.nocookie.net/starwars/images/9/9c/TaunWe.jpg", "Taun We", "Femelle", "2m13", "46 kg", "Chauve", "Noir", "Blanche", "Kaminoan", "Alderaan", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur3, "https://vignette.wikia.nocookie.net/starwars/images/e/ec/SlyMooreIsWatchingYouPoop-OfficialPix.jpg", "Sly Moore", "Femelle", "1m78", "48 kg", "En train de pousser", "Blanc", "Pale", "Umbaran", "Alderaan", btnLike, btnNotLike, gif);
+
+            ivBackground.setBackgroundResource(R.drawable.deathstar);
+
+        }
+        if (planeteNumero.equals("4")) {
+            ivBackground.setBackgroundResource(R.drawable.dantooine);
+            numeroPointeur(ivPointeur1, "u", "Claire", "femme", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
+            numeroPointeur(ivPointeur2, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
+
+        }
+        if (planeteNumero.equals("5")) {
+            ivBackground.setBackgroundResource(R.drawable.alderaan);
+            numeroPointeur(ivPointeur1, "u", "Claire", "femme", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
+            numeroPointeur(ivPointeur2, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
+            numeroPointeur(ivPointeur3, "u", "Jean", "KJHH", "2m", "100 kg", "blond", "marron", "clair", "humain", "tere", btnLike, btnNotLike, gif);
 
         }
 

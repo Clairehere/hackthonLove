@@ -5,154 +5,232 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
+    android:background="@drawable/fondprofil"
     tools:context=".PlaneteActivity">
 
     <!--Page centre -->
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="250dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/container_center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/iv_background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@+id/text_mheigh"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_locone4"
-        app:srcCompat="@android:color/darker_gray" />
+        <ImageButton
+            android:id="@+id/img_locone2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="120dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/iv_gif"
+            app:layout_constraintHorizontal_bias="0.809"
+            app:layout_constraintStart_toStartOf="@+id/iv_gif"
+            app:layout_constraintTop_toTopOf="@+id/iv_gif"
+            app:srcCompat="@drawable/location_icon_png_14" />
 
-    <ImageButton
-        android:id="@+id/img_locone1"
-        android:layout_width="29dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/location_icon_png_14" />
+        <ImageButton
+            android:id="@+id/img_locone3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="220dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/iv_gif"
+            app:layout_constraintHorizontal_bias="0.315"
+            app:layout_constraintStart_toStartOf="@+id/iv_gif"
+            app:layout_constraintTop_toTopOf="@+id/iv_gif"
+            app:srcCompat="@drawable/location_icon_png_14" />
 
-    <ImageButton
-        android:id="@+id/img_locone2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
-        android:layout_marginTop="28dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/location_icon_png_14" />
+        <ImageButton
+            android:id="@+id/img_locone4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="220dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/iv_gif"
+            app:layout_constraintHorizontal_bias="0.809"
+            app:layout_constraintStart_toStartOf="@+id/iv_gif"
+            app:layout_constraintTop_toTopOf="@+id/iv_gif"
+            app:srcCompat="@drawable/location_icon_png_14" />
 
-    <ImageButton
-        android:id="@+id/img_locone3"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="220dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_locone1"
-        app:srcCompat="@drawable/location_icon_png_14" />
+        <ImageButton
+            android:id="@+id/img_locone5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="92dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="164dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/iv_gif"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_locone1"
+            app:srcCompat="@drawable/location_icon_png_14" />
 
-    <ImageButton
-        android:id="@+id/img_locone4"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginRight="152dp"
-        android:layout_marginTop="108dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toStartOf="@+id/img_locone2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/location_icon_png_14" />
+        <ImageButton
+            android:id="@+id/img_locone6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="168dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/iv_gif"
+            app:layout_constraintHorizontal_bias="0.182"
+            app:layout_constraintStart_toStartOf="@+id/iv_gif"
+            app:layout_constraintTop_toTopOf="@+id/iv_gif"
+            app:srcCompat="@drawable/location_icon_png_14" />
 
-    <ImageButton
-        android:id="@+id/img_locone5"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="208dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_locone3"
-        app:srcCompat="@drawable/location_icon_png_14" />
+        <ImageButton
+            android:id="@+id/img_locone9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="180dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/iv_gif"
+            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintStart_toStartOf="@+id/iv_gif"
+            app:layout_constraintTop_toTopOf="@+id/iv_gif"
+            app:srcCompat="@drawable/location_icon_png_14" />
+
+        <ImageButton
+            android:id="@+id/img_locone7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="208dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/iv_gif"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toStartOf="@+id/iv_gif"
+            app:layout_constraintTop_toTopOf="@+id/iv_gif"
+            app:srcCompat="@drawable/location_icon_png_14" />
+
+        <ImageButton
+            android:id="@+id/img_locone8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="120dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/iv_gif"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintStart_toStartOf="@+id/iv_gif"
+            app:layout_constraintTop_toTopOf="@+id/iv_gif"
+            app:srcCompat="@drawable/location_icon_png_14" />
+
 
         <ImageView
             android:id="@+id/iv_background_profil"
-            android:layout_width="253dp"
-            android:layout_height="288dp"
+            android:layout_width="357dp"
+            android:layout_height="161dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@android:color/holo_blue_light" />
-
-        <TextView
-            android:id="@+id/txt_mname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="80dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="8dp"
-            android:text="Name"
-            app:layout_constraintEnd_toStartOf="@+id/txt_mgenre"
-            app:layout_constraintStart_toStartOf="@+id/iv_background_profil"
-            app:layout_constraintTop_toBottomOf="@+id/img_meeting" />
 
         <TextView
             android:id="@+id/txt_mgenre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="64dp"
-            android:layout_marginRight="64dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="Genre"
-            app:layout_constraintEnd_toEndOf="@+id/iv_background_profil"
-            app:layout_constraintTop_toBottomOf="@+id/img_meeting" />
+            app:layout_constraintEnd_toEndOf="@+id/txt_mname"
+            app:layout_constraintStart_toStartOf="@+id/txt_mname"
+            app:layout_constraintTop_toBottomOf="@+id/txt_mname"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <TextView
             android:id="@+id/text_mheigh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginStart="80dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="Height"
-            app:layout_constraintStart_toStartOf="@+id/iv_background_profil"
-            app:layout_constraintTop_toBottomOf="@+id/txt_mname" />
+            app:layout_constraintStart_toEndOf="@+id/txt_mname"
+            app:layout_constraintTop_toBottomOf="@+id/img_meeting"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <TextView
             android:id="@+id/tv_poid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginStart="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="Weight"
-            app:layout_constraintStart_toEndOf="@+id/text_mheigh"
-            app:layout_constraintTop_toBottomOf="@+id/txt_mname" />
+            app:layout_constraintStart_toEndOf="@+id/txt_mgenre"
+            app:layout_constraintTop_toBottomOf="@+id/text_mheigh"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <TextView
             android:id="@+id/txt_mhair"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="Hair"
-            app:layout_constraintStart_toStartOf="@+id/iv_background_profil"
-            app:layout_constraintTop_toBottomOf="@+id/text_mheigh" />
+            app:layout_constraintStart_toEndOf="@+id/text_mheigh"
+            app:layout_constraintTop_toBottomOf="@+id/img_meeting"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <TextView
             android:id="@+id/txt_mskin"
@@ -162,53 +240,60 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="Skin"
-            app:layout_constraintStart_toEndOf="@+id/txt_mhair"
-            app:layout_constraintTop_toBottomOf="@+id/text_mheigh" />
+            app:layout_constraintStart_toEndOf="@+id/tv_poid"
+            app:layout_constraintTop_toBottomOf="@+id/txt_mhair"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <TextView
             android:id="@+id/txt_mspecies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="Species"
-            app:layout_constraintStart_toStartOf="@+id/iv_background_profil"
-            app:layout_constraintTop_toBottomOf="@+id/txt_mhair" />
+            app:layout_constraintBottom_toBottomOf="@+id/iv_background_profil"
+            app:layout_constraintEnd_toEndOf="@+id/txt_mgenre"
+            app:layout_constraintStart_toStartOf="@+id/txt_mgenre"
+            app:layout_constraintTop_toBottomOf="@+id/txt_mgenre"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <TextView
             android:id="@+id/txt_mmass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="Mass"
-            app:layout_constraintStart_toStartOf="@+id/iv_background_profil"
-            app:layout_constraintTop_toBottomOf="@+id/txt_mspecies" />
+            app:layout_constraintBottom_toBottomOf="@+id/iv_background_profil"
+            app:layout_constraintStart_toEndOf="@+id/txt_mspecies"
+            app:layout_constraintTop_toBottomOf="@+id/tv_poid"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <TextView
             android:id="@+id/txt_meyes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="Eyes"
-            app:layout_constraintStart_toEndOf="@+id/txt_mskin"
-            app:layout_constraintTop_toBottomOf="@+id/text_mheigh" />
+            app:layout_constraintBottom_toBottomOf="@+id/iv_background_profil"
+            app:layout_constraintStart_toEndOf="@+id/txt_mmass"
+            app:layout_constraintTop_toBottomOf="@+id/txt_mskin"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <ImageView
             android:id="@+id/img_meeting"
             android:layout_width="71dp"
             android:layout_height="66dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="@+id/iv_background_profil"
-            app:layout_constraintHorizontal_bias="0.542"
             app:layout_constraintStart_toStartOf="@+id/iv_background_profil"
             app:layout_constraintTop_toTopOf="@+id/iv_background_profil"
             app:srcCompat="@mipmap/ic_launcher" />
@@ -217,39 +302,41 @@
             android:id="@+id/button_like"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
             android:text="J'aime"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_background_profil"
-            app:layout_constraintStart_toStartOf="@+id/iv_background_profil" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_mhair"
+            app:layout_constraintTop_toTopOf="@+id/iv_background_profil" />
 
         <Button
             android:id="@+id/button_not_like"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
             android:text="Je n'aime pas"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_background_profil"
-            app:layout_constraintEnd_toEndOf="@+id/iv_background_profil" />
+            app:layout_constraintEnd_toEndOf="@+id/button_like"
+            app:layout_constraintStart_toStartOf="@+id/button_like"
+            app:layout_constraintTop_toBottomOf="@+id/button_like" />
 
         <ImageView
             android:id="@+id/iv_gif"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="297dp"
+            android:layout_height="260dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/iv_background"
             app:layout_constraintEnd_toEndOf="@+id/iv_background"
+            app:layout_constraintHorizontal_bias="0.661"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/iv_background"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:color/transparent" />
 
         <ImageView
@@ -262,13 +349,41 @@
             app:layout_constraintBottom_toBottomOf="@+id/iv_background"
             app:layout_constraintStart_toStartOf="@+id/iv_background"
             app:srcCompat="@mipmap/ic_launcher" />
+        <ImageButton
+            android:id="@+id/img_locone1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="156dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="56dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_gif"
+            app:srcCompat="@drawable/location_icon_png_14" />
+
+        <TextView
+            android:id="@+id/txt_mname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="@+id/img_meeting"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/img_meeting"
+            app:layout_constraintTop_toBottomOf="@+id/img_meeting"
+            android:textColor="@android:color/holo_orange_light"/>
 
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
 
         android:id="@+id/conteneur_bottom"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:baselineAligned="false"
@@ -276,12 +391,13 @@
         <!-- -->
         <ImageView
             android:id="@+id/iv_table"
-            android:layout_width="409dp"
-            android:layout_height="266dp"
+            android:layout_width="380dp"
+            android:layout_height="220dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/fonderanplanete" />
+            app:srcCompat="@drawable/spaceship_cockpit" />
 
         <ImageView
             android:id="@+id/iv_galaxy"

@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
     tools:context=".GalaxyActivity">
+    tools:context=".GalaxyActivity"
+    android:background="@drawable/espace_etoiles">
 
     <!--Page centre -->
 
@@ -16,8 +18,8 @@
 
         <ImageView
             android:id="@+id/iv_vessel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -27,75 +29,78 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lv1"
-            app:srcCompat="@mipmap/ic_launcher" />
+            app:srcCompat="@drawable/vaisseau" />
 
         <ImageView
             android:id="@+id/iv_planete1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="76dp"
+            android:layout_marginTop="40dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_name2"
-            app:srcCompat="@mipmap/ic_launcher_round" />
+            app:layout_constraintTop_toBottomOf="@+id/lv2"
+            app:srcCompat="@drawable/tatooine" />
 
         <ImageView
             android:id="@+id/iv_planete2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="92dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_name3"
-            app:srcCompat="@mipmap/ic_launcher_round" />
+            app:srcCompat="@drawable/coruscant" />
 
         <ImageView
             android:id="@+id/iv_planete3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginLeft="160dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginStart="160dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="52dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/ic_launcher_round" />
+            app:srcCompat="@drawable/deathstar" />
 
         <ImageView
             android:id="@+id/iv_planete4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="84dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_name3"
-            app:srcCompat="@mipmap/ic_launcher_round" />
+            app:srcCompat="@drawable/dantooine" />
 
         <ImageView
             android:id="@+id/iv_planete5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_name4"
-            app:srcCompat="@mipmap/ic_launcher_round" />
+            app:layout_constraintTop_toBottomOf="@+id/lv4"
+            app:srcCompat="@drawable/alderaan" />
 
         <TextView
             android:id="@+id/tv_name1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="Tatoine"
+            android:textColor="@android:color/holo_orange_light"
+            app:layout_constraintEnd_toEndOf="@+id/iv_planete1"
             app:layout_constraintStart_toStartOf="@+id/iv_planete1"
             app:layout_constraintTop_toBottomOf="@+id/iv_planete1" />
 
@@ -103,8 +108,12 @@
             android:id="@+id/tv_name2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:text="Coruscant"
+            android:textColor="@android:color/holo_orange_light"
+            app:layout_constraintEnd_toEndOf="@+id/iv_planete2"
             app:layout_constraintStart_toStartOf="@+id/iv_planete2"
             app:layout_constraintTop_toBottomOf="@+id/iv_planete2" />
 
@@ -112,8 +121,12 @@
             android:id="@+id/tv_name3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:text="Wild"
+            android:textColor="@android:color/holo_orange_light"
+            app:layout_constraintEnd_toEndOf="@+id/iv_planete3"
             app:layout_constraintStart_toStartOf="@+id/iv_planete3"
             app:layout_constraintTop_toBottomOf="@+id/iv_planete3" />
 
@@ -121,8 +134,12 @@
             android:id="@+id/tv_name4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
-            android:text="Datooine"
+            android:text="Dantooine"
+            android:textColor="@android:color/holo_orange_light"
+            app:layout_constraintEnd_toEndOf="@+id/iv_planete4"
             app:layout_constraintStart_toStartOf="@+id/iv_planete4"
             app:layout_constraintTop_toBottomOf="@+id/iv_planete4" />
 
@@ -130,8 +147,12 @@
             android:id="@+id/tv_name5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:text="Alderaan"
+            android:textColor="@android:color/holo_orange_light"
+            app:layout_constraintEnd_toEndOf="@+id/iv_planete5"
             app:layout_constraintStart_toStartOf="@+id/iv_planete5"
             app:layout_constraintTop_toBottomOf="@+id/iv_planete5" />
 
@@ -144,7 +165,8 @@
             android:layout_marginStart="8dp"
             android:text="Population"
             app:layout_constraintBottom_toTopOf="@+id/iv_planete1"
-            app:layout_constraintStart_toEndOf="@+id/iv_planete1" />
+            app:layout_constraintStart_toEndOf="@+id/iv_planete1"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <TextView
             android:id="@+id/tv_population4"
@@ -154,7 +176,8 @@
             android:layout_marginRight="16dp"
             android:text="Population"
             app:layout_constraintBottom_toTopOf="@+id/iv_planete4"
-            app:layout_constraintEnd_toStartOf="@+id/iv_planete4" />
+            app:layout_constraintEnd_toStartOf="@+id/iv_planete4"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <ListView
             android:id="@+id/lv1"
@@ -213,7 +236,8 @@
             android:layout_marginStart="24dp"
             android:text="Population"
             app:layout_constraintBottom_toTopOf="@+id/iv_planete2"
-            app:layout_constraintStart_toEndOf="@+id/iv_planete2" />
+            app:layout_constraintStart_toEndOf="@+id/iv_planete2"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <TextView
             android:id="@+id/tv_population3"
@@ -223,7 +247,8 @@
             android:layout_marginStart="16dp"
             android:text="Population"
             app:layout_constraintBottom_toTopOf="@+id/iv_planete3"
-            app:layout_constraintStart_toEndOf="@+id/iv_planete3" />
+            app:layout_constraintStart_toEndOf="@+id/iv_planete3"
+            android:textColor="@android:color/holo_orange_light"/>
 
         <TextView
             android:id="@+id/tv_population5"
@@ -233,7 +258,8 @@
             android:layout_marginRight="16dp"
             android:text="Population"
             app:layout_constraintBottom_toTopOf="@+id/iv_planete5"
-            app:layout_constraintEnd_toStartOf="@+id/iv_planete5" />
+            app:layout_constraintEnd_toStartOf="@+id/iv_planete5"
+            android:textColor="@android:color/holo_orange_light"/>
 
     </android.support.constraint.ConstraintLayout>
 

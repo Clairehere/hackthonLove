@@ -7,6 +7,7 @@
     tools:context=".GalaxyActivity">
 
     <!--Page centre -->
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/container_center"
         android:layout_width="wrap_content"
@@ -220,8 +221,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:text="Population"
-            app:layout_constraintStart_toEndOf="@+id/iv_planete3"
-            tools:layout_editor_absoluteY="33dp" />
+            app:layout_constraintBottom_toTopOf="@+id/iv_planete3"
+            app:layout_constraintStart_toEndOf="@+id/iv_planete3" />
 
         <TextView
             android:id="@+id/tv_population5"
@@ -249,11 +250,33 @@
 
         <ImageView
             android:id="@+id/iv_table"
-            android:layout_width="wrap_content"
-            android:layout_height="214dp"
+            android:layout_width="409dp"
+            android:layout_height="266dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/fonderanplanete" />
+
+        <TextView
+            android:id="@+id/tv_listlike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Vos coups de coeur"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_table"
+            app:layout_constraintTop_toTopOf="@+id/iv_table" />
+
+        <ListView
+            android:id="@+id/lv_like"
+            android:layout_width="158dp"
+            android:layout_height="208dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_table"
+            app:layout_constraintTop_toBottomOf="@+id/tv_listlike"></ListView>
     </android.support.constraint.ConstraintLayout>
 
 </android.support.v4.widget.DrawerLayout>

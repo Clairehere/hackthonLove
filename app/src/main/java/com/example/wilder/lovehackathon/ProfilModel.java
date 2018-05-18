@@ -26,6 +26,19 @@ public class ProfilModel {
         Species = species;
     }
 
+    public ProfilModel(String eyeColor, String gender, String hairColor, String height, String image, String mass, String name, String skinColor, String species) {
+        this.image = image;
+        this.name = name;
+        this.gender = gender;
+        this.height = height;
+        this.mass = mass;
+        this.hairColor = hairColor;
+        this.eyeColor = eyeColor;
+        this.skinColor = skinColor;
+        this.planet = planet;
+
+    }
+
     public ProfilModel() {
     }
 

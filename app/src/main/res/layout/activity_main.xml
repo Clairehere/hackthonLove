@@ -17,15 +17,16 @@
 
     <TextView
         android:id="@+id/tv_infos"
-        android:layout_width="189dp"
-        android:layout_height="177dp"
+        android:layout_width="321dp"
+        android:layout_height="241dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Spech pour expliquer le but du jeu"
+        android:gravity="center"
+        android:text="Dans une galaxie lontaine, très lointaine  la population commence à diminuer fortement \nTa mision trouver l'amour intergalactique !!"
         android:textColor="@android:color/holo_orange_light"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -44,9 +45,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Ce lancer dans l'aventure"
+        android:layout_marginTop="36dp"
+        android:text="Se lancer dans l'aventure"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_infos" />
 

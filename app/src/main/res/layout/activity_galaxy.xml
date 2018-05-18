@@ -269,6 +269,38 @@
             app:layout_constraintBottom_toTopOf="@+id/iv_planete5"
             app:layout_constraintEnd_toStartOf="@+id/iv_planete5" />
 
+        <ImageView
+            android:id="@+id/iv_gif4"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_planete4"
+            app:layout_constraintTop_toTopOf="@+id/iv_planete4"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <ImageView
+            android:id="@+id/iv_gif1"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            app:layout_constraintStart_toStartOf="@+id/iv_planete1"
+            app:layout_constraintTop_toTopOf="@+id/iv_planete1"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <ImageView
+            android:id="@+id/iv_gif5"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_planete5"
+            app:layout_constraintTop_toTopOf="@+id/iv_planete5"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <ImageView
+            android:id="@+id/iv_gif2"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            app:layout_constraintStart_toStartOf="@+id/iv_planete2"
+            app:layout_constraintTop_toTopOf="@+id/iv_planete2"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
     </android.support.constraint.ConstraintLayout>
 
     <!--Volet Bas -->

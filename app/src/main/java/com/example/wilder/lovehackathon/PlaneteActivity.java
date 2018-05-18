@@ -28,6 +28,7 @@ public class PlaneteActivity extends AppCompatActivity {
     final ArrayList<ProfilModel> mList1 = new ArrayList<>();
     public static boolean PLANETE = false;
     DrawerLayout mDrawerLayout;
+    int match =0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +62,9 @@ public class PlaneteActivity extends AppCompatActivity {
         final Button btnNotLike = findViewById(R.id.button_not_like);
 
 
-        Intent intent = getIntent();
+        final Intent intent2 = new Intent(PlaneteActivity.this, GalaxyActivity.class);
+
+        final Intent intent = getIntent();
         final String planeteNumero = intent.getStringExtra("planete");
         //remplir les données
         if (planeteNumero.equals("1")) {
@@ -73,7 +76,14 @@ public class PlaneteActivity extends AppCompatActivity {
             numeroPointeur(ivPointeur3, "https://vignette.wikia.nocookie.net/starwars/images/b/b6/Cord%C3%A9_-_SW_Card_Trader.png", "Cordé", "Femme", "1m57", "60 kg", "Brun", "Marron", "light", "Humain", "Tatoine", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur5, "https://vignette.wikia.nocookie.net/starwars/images/0/02/Phasma.png", "Captain Phasma", "Femme", "2m", "76 kg", "Or", "Bleu", "Pale", "Humain", "Tatoine", btnLike, btnNotLike, gif);
             numeroPointeur(ivPointeur8, "https://vignette.wikia.nocookie.net/starwars/images/f/fc/Leia_Organa_TLJ.png", "Leia Organa", "Femme", "1m50", "51 kg", "Brun", "Marron", "Claire", "Humain", "Tatoine", btnLike, btnNotLike, gif);
+            if (match>2){
+                String match="bebe1";
 
+                intent2.putExtra("match", match);
+            }else {
+                String match="explosion1";
+                intent2.putExtra("match", match);
+            }
 
             ivBackground.setBackgroundResource(R.drawable.tatooine);
 
@@ -81,6 +91,14 @@ public class PlaneteActivity extends AppCompatActivity {
         }
 
         if (planeteNumero.equals("2")) {
+            if (match>2){
+                String match="bebe2";
+
+                intent2.putExtra("match", match);
+            }else {
+                String match="explosion2";
+                intent2.putExtra("match", match);
+            }
             ivPointeur2.setVisibility(View.VISIBLE);
             ivPointeur3.setVisibility(View.VISIBLE);
             ivPointeur6.setVisibility(View.VISIBLE);
@@ -99,6 +117,14 @@ public class PlaneteActivity extends AppCompatActivity {
         }
 
         if (planeteNumero.equals("3")) {
+            if (match>2){
+                String match="bebe3";
+
+                intent2.putExtra("match", match);
+            }else {
+                String match="explosion3";
+                intent2.putExtra("match", match);
+            }
 
             ivPointeur4.setVisibility(View.VISIBLE);
             ivPointeur6.setVisibility(View.VISIBLE);
@@ -110,6 +136,14 @@ public class PlaneteActivity extends AppCompatActivity {
             ivBackground.setBackgroundResource(R.drawable.deathstar);
         }
         if (planeteNumero.equals("4")) {
+            if (match>2){
+                String match="bebe4";
+
+                intent2.putExtra("match", match);
+            }else {
+                String match="explosion4";
+                intent2.putExtra("match", match);
+            }
 
             ivPointeur6.setVisibility(View.VISIBLE);
             ivPointeur3.setVisibility(View.VISIBLE);
@@ -118,6 +152,14 @@ public class PlaneteActivity extends AppCompatActivity {
             ivBackground.setBackgroundResource(R.drawable.dantooine);
         }
         if (planeteNumero.equals("5")) {
+            if (match>2){
+                String match="bebe5";
+
+                intent2.putExtra("match", match);
+            }else {
+                String match="explosion5";
+                intent2.putExtra("match", match);
+            }
 
             ivPointeur5.setVisibility(View.VISIBLE);
             ivPointeur8.setVisibility(View.VISIBLE);
@@ -134,9 +176,10 @@ public class PlaneteActivity extends AppCompatActivity {
         galaxy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 PLANETE = true;
-                Intent intent = new Intent(PlaneteActivity.this, GalaxyActivity.class);
-                startActivity(intent);
+
+                startActivity(intent2);
             }
         });
 
@@ -184,7 +227,7 @@ public class PlaneteActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
+        match +=1;
                 gif.setVisibility(View.VISIBLE);
                 Glide.with(PlaneteActivity.this).load(R.drawable.light).into(gif);
                 new Handler().postDelayed(new Runnable() {

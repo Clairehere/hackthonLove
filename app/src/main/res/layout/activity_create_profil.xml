@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="975dp"
-        android:layout_height="559dp"
+        android:layout_width="1200dp"
+        android:layout_height="700dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fondprofil" />
@@ -33,7 +33,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="28dp"
                 android:gravity="center"
-                android:text="Créer ton image"
+                android:text="Créer ton profil"
                 android:textColor="@android:color/holo_orange_light"
                 android:textSize="24sp"
                 android:textStyle="bold"

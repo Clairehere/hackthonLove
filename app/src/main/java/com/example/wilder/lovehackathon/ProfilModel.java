@@ -11,6 +11,9 @@ public class ProfilModel {
     private String skinColor;
     private String Species;
     private String planet;
+    private String tel;
+
+
 
 
     public ProfilModel(String eyeColor, String gender, String hairColor, String height, String image, String mass, String name, String skinColor, String species, String planet) {
@@ -40,6 +43,12 @@ public class ProfilModel {
     }
 
     public ProfilModel() {
+    }
+
+    public ProfilModel(String name, String planet, String tel) {
+        this.name = name;
+        this.planet = planet;
+        this.tel = tel;
     }
 
 

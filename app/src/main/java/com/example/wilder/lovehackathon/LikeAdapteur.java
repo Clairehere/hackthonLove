@@ -13,15 +13,15 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 
 
-public class LikeAdapteur extends ArrayAdapter<LikeModel> {
-    public LikeAdapteur(Context context, ArrayList<LikeModel> trips) {
+public class LikeAdapteur extends ArrayAdapter<ProfilModel> {
+    public LikeAdapteur(Context context, ArrayList<ProfilModel> trips) {
         super(context, 0, trips);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Get the data item for this position
-        LikeModel likeModel = getItem(position);
+        ProfilModel likeModel = getItem(position);
         // Check if an existing view is being reused, otherwise inflate the view
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_like, parent, false);
@@ -31,7 +31,9 @@ public class LikeAdapteur extends ArrayAdapter<LikeModel> {
         tvName.setText(likeModel.getName());
 
         TextView tvPlanete = (TextView) convertView.findViewById(R.id.tv_planete_like);
-        tvName.setText(likeModel.getPlanete());
+        tvName.setText(likeModel.getPlanet());
+
+        TextView tvTel = (TextView) convertView.findViewById(R.id.tv_planete_like);
 
         return convertView;
     }
